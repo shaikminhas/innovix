@@ -1,146 +1,151 @@
- /* Google Fonts */
+/* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap");
 
 :root {
---main-color: #edd4c6;
---text-color: #121212;
---container-color: #fdf5f0;
---bg-color: #fff;
---text-alter-color: #27282b;
---poppins-font: "Poppins", sans-serif;
---font-family-1: "Raleway", sans-serif;
---font-family-2: "Roboto Slab", sans-serif;
+    --main-color: #edd4c6;
+    --text-color: #121212;
+    --container-color: #fdf5f0;
+    --bg-color: #fff;
+    --text-alter-color: #27282b;
+    --poppins-font: "Poppins", sans-serif;
+    --font-family-1: "Raleway", sans-serif;
+    --font-family-2: "Roboto Slab", sans-serif;
 }
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-scroll-behavior: smooth;
-scroll-padding-top: 3rem;
-font-family: var(--font-family-2);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    font-family: var(--font-family-2);
 }
+
 body {
-padding-top: 60px; /* Prevents content from hiding under the navbar */
-color: var(--text-color);
-font-family: var(--font-family-2);
+    padding-top: 60px; /* Adjust this if your header is taller */
+    color: var(--text-color);
+    font-family: var(--font-family-2);
 }
 
 a {
-text-decoration: none;
+    text-decoration: none;
 }
 
 li {
-list-style: none;
+    list-style: none;
 }
 
 img {
-width: 100%;
+    width: 100%;
 }
 
 section {
-padding: 3rem 0 2rem;
+    padding: 3rem 0 2rem;
 }
 
 .container {
-max-width: 960px;
-margin: auto;
-width: 100%;
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
 }
 
 /* Navbar Styles */
 header {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-background-color: var(--bg-color); /* Ensures the navbar has a background */
-z-index: 100;
-padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color); /* Ensures the navbar has a background */
+    z-index: 100;
+    padding: 10px 0;
 }
+
 .navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .logo {
-font-size: 1.3rem;
-font-weight: 500;
-letter-spacing: 1px;
-color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--text-color);
 }
 
 .nav-links {
-display: flex;
-align-items: center;
-column-gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
 }
 
 .nav-link {
-position: relative;
-font-size: 0.9rem;
-font-weight: 500;
-color: var(--text-color);
-font-family: var(--poppins-font);
-transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: relative;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+    font-family: var(--poppins-font);
+    transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .nav-link:hover {
-color: var(--main-color); /* Hover effect */
+    color: var(--main-color); /* Hover effect */
 }
 
 .content {
-padding: 20px;
-display: flex;
-flex-direction: column;
-gap: 20px;
-align-items: center; /* Centers the content horizontally */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Centers the content horizontally */
 }
 
+/* Consolidated .post-card class */
 .post-card {
-background-color: white;
-padding: 15px;
-border-radius: 10px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-max-width: 500px; /* Sets a maximum width for the post card */
-}    
-  .user-info {  
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    position: relative;
+}
+
+.user-info {  
     display: flex;  
     align-items: center;  
     gap: 10px;  
-  }  
-    
-  .user-photo {  
+}
+
+.user-photo {  
     width: 50px;  
     height: 50px;  
     border-radius: 50%;  
-  }  
-    
-  .user-details {  
+}
+
+.user-details {  
     flex: 1;  
-  }  
-    
-  .post-content {  
+}
+
+.post-content {  
     margin-top: 5px;  
-  }  
-    
-  .post-image {  
+}
+
+.post-image {  
     width: 100%;  
     max-height: 400px;  
     object-fit: cover;  
     margin-bottom: 10px;  
     border-radius: 10px;  
-  }  
-    
-  .actions {  
+}
+
+.actions {  
     display: flex;  
     justify-content: space-between;  
     margin-top: 10px;  
-  }  
-    
-  .like-btn, .comment-btn, .connect-btn {  
+}
+
+.like-btn, .comment-btn, .connect-btn {  
     background-color: #040404;  
     color: rgb(248, 245, 245);  
     padding: 10px;  
@@ -148,32 +153,32 @@ max-width: 500px; /* Sets a maximum width for the post card */
     border-radius: 5px;  
     cursor: pointer;  
     margin-right: 10px;  
-  }  
-    
-  .like-btn:hover, .comment-btn:hover, .connect-btn:hover {  
-    background-color: rgb(11, 11, 11);  
-  }
-  
-/* Responsive styles */
+}
 
+.like-btn:hover, .comment-btn:hover, .connect-btn:hover {  
+    background-color: rgb(11, 11, 11);  
+}
+
+/* Responsive styles */
 @media only screen and (max-width: 768px) {
-.content {
-padding: 10px;
-}
-.post-card {
-max-width: 400px;
-}
+    .content {
+        padding: 10px;
+    }
+    .post-card {
+        max-width: 400px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
-.content {
-padding: 5px;
-}
-.post-card {
-max-width: 300px;
-}
+    .content {
+        padding: 5px;
+    }
+    .post-card {
+        max-width: 300px;
+    }
 }
 
+/* Publish Section */
 .publish-container {  
     display: flex;  
     flex-direction: column;  
@@ -185,22 +190,14 @@ max-width: 300px;
     border-radius: 10px;  
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  
     width: 500px;
-  }  
-  .post-card {  
-    background-color: white;  
-    padding: 15px;  
-    border-radius: 10px;  
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  
-    max-width: 500px;  
-    position: relative;
-  }  
- 
-  .upload-section {  
+}
+
+.upload-section {  
     text-align: center;  
     margin-bottom: 20px;  
-  }  
-    
-  .upload-icon {  
+}
+
+.upload-icon {  
     font-size: 48px;  
     background-color: lightgray;  
     width: 100px;  
@@ -211,18 +208,18 @@ max-width: 300px;
     margin-bottom: 10px;  
     cursor: pointer;  
     transition: background-color 0.3s ease-in-out;  
-  }  
-    
-  .upload-icon:hover {  
+}
+
+.upload-icon:hover {  
     background-color: #ccc;  
-  }  
-    
-  .input-section {  
+}
+
+.input-section {  
     width: 80%;  
     margin-bottom: 20px;  
-  }  
-    
-  .input-section input {  
+}
+
+.input-section input {  
     width: 100%;  
     padding: 10px;  
     border-radius: 25px;  
@@ -230,9 +227,9 @@ max-width: 300px;
     outline: none;  
     font-size: 16px;  
     font-family: var(--font-family-2);  
-  }  
-    
-  .submit-btn {  
+}
+
+.submit-btn {  
     background-color: #060606;  
     color: white;  
     padding: 10px 20px;  
@@ -242,12 +239,27 @@ max-width: 300px;
     margin-top: 20px;  
     font-size: 16px;  
     font-family: var(--font-family-2);  
-  }  
-    
-  .submit-btn:hover {  
+}
+
+.submit-btn:hover {  
     background-color: #0056b3;  
-  }
-  .ranking-list {
+}
+
+/* Rankings Section */
+.rankings-section {  
+    max-width: 400px; /* Same as the container width */  
+    margin: auto;  
+    padding: 20px;  
+    background-color: #f7f7f7;  
+    border-radius: 10px;  
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ranking-list {
     list-style: none;
     padding: 10px 0;
     margin-top: 20px;
@@ -269,28 +281,4 @@ max-width: 300px;
 
 .points {
     color: gold;
-}
-
-.ranking-list {
-  list-style: none;
-  padding: 10px 0;
-  margin-top: 20px;
-}
-
-.ranking-list li {
-  background-color: #d3e0ff;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-}
-
-.ranking-list li span {
-  font-weight: bold;
-}
-
-.points {
-  color: gold;
 }
